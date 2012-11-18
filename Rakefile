@@ -8,18 +8,11 @@ Rake::ExtensionTask.new('trace_nums')
 SO_NAME = "trace_nums.so"
 
 desc "Test everything."
-test_task = task :test => :lib do
+test_task = task :test => :compile do
   Rake::TestTask.new(:test) do |t|
     # TODO: fix test-lnum
     t.test_files = Dir['test/test-*.rb'] - ['test/test-lnum.rb']
     t.verbose = true
-  end
-end
-
-desc "Create the core ruby-debug shared library extension"
-task :lib do
-  Dir.chdir("ext") do
-    system("#{Gem.ruby} extconf.rb && make")
   end
 end
 
