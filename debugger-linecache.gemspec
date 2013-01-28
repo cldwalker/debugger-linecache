@@ -19,4 +19,5 @@ example in a debugger where the same lines are shown many times.
   s.add_dependency "debugger-ruby_core_source", '>= 1.1.1'
   s.add_development_dependency 'rake', '~> 0.9.2.2'
   s.add_development_dependency 'rake-compiler', '~> 0.8.0'
+  s.license = "MIT"
 end
