@@ -16,6 +16,5 @@ example in a debugger where the same lines are shown many times.
   s.extra_rdoc_files = ["README.md"]
   s.files = `git ls-files`.split("\n")
   s.add_development_dependency 'rake', '~> 0.9.2.2'
-  s.add_development_dependency 'rake-compiler', '~> 0.8.0'
   s.license = "MIT"
 end
