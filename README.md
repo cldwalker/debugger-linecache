@@ -7,6 +7,7 @@ For more info see OLD\_README.
 ## Credits
 
 * Original authors: R. Bernstein, Mark Moseley
+* @ko1 - replace C extension with ruby
 
 ## TODO
 * Fix todo test

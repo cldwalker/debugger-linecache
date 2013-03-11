@@ -1,3 +1,7 @@
+## 1.2.0
+* Replace C extension with ruby 
+* No more debugger-ruby_core_source dependency
+
 ## 1.1.2
 * Fix rdoc/ri warning
 
