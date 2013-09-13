@@ -377,7 +377,9 @@ if __FILE__ == $0
   end
 
   lines = LineCache::getlines(__FILE__)
-  puts "#{__FILE__} has #{LineCache.size(__FILE__)} lines"
+  puts "Source code of #{__FILE__} is #{lines}"
+  size = LineCache.size(__FILE__)
+  puts "#{__FILE__} has #{size} lines"
   line = LineCache::getline(__FILE__, 6)
   puts "The 6th line is\n#{line}"
   line = LineCache::remap_file(__FILE__, 'another_name')
