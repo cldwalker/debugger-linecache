@@ -4,7 +4,7 @@ require 'rubygems/package_task'
 require 'rake/testtask'
 
 desc "Test everything."
-test_task = task :test => :lib do
+test_task = task :test => :compile do
   Rake::TestTask.new(:test) do |t|
     # TODO: fix test-lnum
     t.test_files = Dir['test/test-*.rb'] - ['test/test-lnum.rb']
